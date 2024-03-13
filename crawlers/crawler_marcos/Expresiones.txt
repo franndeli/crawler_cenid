@@ -1,0 +1,6 @@
+-Expresiones regulares a tener en cuenta para la eliminacion de ruido:
+
+-/\n/ => / /
+- /--/*
+- \md+
+-/Estatuto*de*autonomía*de*la*Comunidad*de*Madrid/
