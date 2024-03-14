@@ -21,13 +21,15 @@ fs.readFile('crawlers\\crawler_marcos\\Estatutos de Plena inclusión Castilla y 
                 let cleanContent = page.content.replace(//g, '');
 
                 // Eliminar espacios y saltos de línea adicionales
-                cleanContent = cleanContent.trim().replace(/\n+/g, ' ');
+                cleanContent = cleanContent.trim().replace(/\n+/g, 'xd');
                 cleanContent = cleanContent.trim().replace(/ +/g, ' ');
-                cleanContent = cleanContent.trim().replace(/^[0-9][0-9] Estatutos Sociales de Plena inclusión en Lectura Fácil /g, '');
-                cleanContent = cleanContent.trim().replace(/^[0-9][0-9] /g, '');
                 cleanContent = cleanContent.trim().replace(/^[0-9] /g, '');
-                cleanContent = cleanContent.trim().replace(/ ./g, '.');
-
+                cleanContent = cleanContent.trim().replace(/^[0-9][0-9] /g, '');
+                cleanContent = cleanContent.trim().replace(/^Estatutos Sociales de Plena inclusión en Lectura Fácil/g, '');
+                cleanContent = cleanContent.trim().replace(/ \./g, '.');
+                cleanContent = cleanContent.trim().replace(/ ,/g, ',');
+                cleanContent = cleanContent.trim().replace(/ :/g, ':');
+                cleanContent = cleanContent.trim().replace(/ ;/g, ';');
 
 
                 // Asignar el contenido limpiado a la página
