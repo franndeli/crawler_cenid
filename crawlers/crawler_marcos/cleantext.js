@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Leer el archivo JSON
-fs.readFile('crawlers\\crawler_marcos\\Estatutos de Plena inclusión Castilla y León(LF).json', 'utf8', (err, data) => {
+fs.readFile('crawlers\\crawler_marcos\\antiguo.json', 'utf8', (err, data) => {
     if (err) {
         console.error('Error al leer el archivo:', err);
         return;
@@ -51,7 +51,7 @@ fs.readFile('crawlers\\crawler_marcos\\Estatutos de Plena inclusión Castilla y 
         const documentoLimpiadoJSON = JSON.stringify(documentoLimpiado, null, 2);
 
         // Escribir el documento limpiado de nuevo en un archivo JSON
-        fs.writeFileSync('crawlers\\crawler_marcos\\documento_limpiado.json', documentoLimpiadoJSON, 'utf8');
+        fs.writeFileSync('crawlers\\crawler_marcos\\Estatutos de Plena inclusión Castilla y León(LF).json', documentoLimpiadoJSON, 'utf8');
 
         console.log('El archivo documento_limpiado.json se ha creado con éxito.');
     } catch (error) {
