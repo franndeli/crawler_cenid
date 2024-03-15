@@ -86,6 +86,9 @@ function HomePage() {
   
           <button className="continuar" onClick={handleLimpieza}>Continuar</button>
         </main>
+        <footer className="App-footer">
+          <p>© Trabajo realizado por el grupo Gaming Free House <img alt="GamingSexFreeHouse" url=""></img> - Todos los derechos reservados</p>
+        </footer>
       </div>
     );
   }
