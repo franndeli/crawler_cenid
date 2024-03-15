@@ -48,10 +48,12 @@ function Limpieza(filePath, newFilePath, callback) {
                     obj.content = obj.content.replace(/\t/g, ' ');
 
                     // Reemplazo de punto medio por guión solo si va seguido de una palabra o un espacio y una palabra
-                    obj.content = obj.content.replace(/•(?=\s?\w)/g, '-');
+                    obj.content = obj.content.replace(/[•»■─](?=\s?\w)/g, '-');
 
-                    obj.content = obj.content.replace(/©/g, ' ');
-                    obj.content = obj.content.replace(/»/g, ' ');
+                    /*obj.content = obj.content.replace(/©/g, ' ');
+                    obj.content = obj.content.replace(/»/g, ' ');*/
+
+                    obj.content = obj.content.replace(/[^\x20-\x7E{äëïöüáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙüÜñÑ]/g, '');
 
                     //---------- AHORA LIMPIAMOS ESPACIOS ---------//
 
@@ -108,10 +110,10 @@ function Limpieza(filePath, newFilePath, callback) {
         fs.writeFile(newFilePath, modifiedData, 'utf8', (err) => {
             if (err) {
                 console.error("Error escribiendo el archivo:", err);
-                callback(err); // Notifica al callback sobre el error
+                callback(err);
             } else {
                 console.log("Archivo modificado guardado exitosamente.");
-                callback(null); // Notifica al callback sobre el error
+                callback(null);
             }
         });
     });

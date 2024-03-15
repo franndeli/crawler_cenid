@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from './HomePage';
-import CleanedFilePage from './CleanedFilePage';
 
 import './App.css';
 
@@ -14,7 +13,6 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route path="/limpieza" element={<CleanedFilePage />} />
       </Routes>
     </Router>
   );

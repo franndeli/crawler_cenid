@@ -23,7 +23,7 @@ app.post('/limpieza', (req, res) => {
     }
     const file = req.files.file;
     const filePath = 'server/archivos_temporales/' + file.name;
-    const newFilePath = 'server/limpieza/' + 'cleaned-' + file.name;
+    const newFilePath = 'server/limpieza/' + file.name;
 
     file.mv(filePath, err => {
         if (err) {
