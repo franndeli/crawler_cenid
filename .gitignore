@@ -1,2 +1,4 @@
 node_modules/
 crawlers/*/*.json
+server/archivos_temporales/*.json
+server/limpieza/*.json
