@@ -1,7 +1,7 @@
 # Proyecto de Limpieza de Corpus para Machine Learning
 
 ## Descripción
-Este proyecto ha sido desarrollado en el Instituto de Investigación de Informática de Alicante, específicamente en la rama que trabaja el CENID (Centro de Creación y Limpieza de Corpus e Inteligencia Artificial). El objetivo principal es proporcionar una herramienta que facilite la limpieza de corpus utilizados en el aprendizaje automático, eliminando impurezas que pueden ser introducidas durante el proceso de recolección de datos por crawlers de Python.
+Este proyecto ha sido desarrollado en el Instituto de Investigación de Informática de Alicante, específicamente en la rama que trabaja el CENID. El objetivo principal es proporcionar una herramienta que facilite la limpieza de corpus utilizados en el aprendizaje automático, eliminando impurezas que pueden ser introducidas durante el proceso de recolección de datos por crawlers de Python.
 
 La aplicación está construida utilizando React.js para la interfaz de usuario, permitiendo una interacción eficiente y amigable para los usuarios que necesitan limpiar datos de manera efectiva.
 
