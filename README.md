@@ -1,51 +1,52 @@
-# Proyecto de Limpieza de Corpus para Machine Learning
+# Corpus Cleaning Tool for Machine Learning
 
-## Descripción
-Este proyecto ha sido desarrollado en el Instituto de Investigación de Informática de Alicante, específicamente en la rama que trabaja el CENID. El objetivo principal es proporcionar una herramienta que facilite la limpieza de corpus utilizados en el aprendizaje automático, eliminando impurezas que pueden ser introducidas durante el proceso de recolección de datos por crawlers de Python.
+## Description
+This project was developed at the Instituto de Investigación de Informática de Alicante, specifically within the CENID branch. The main goal is to provide a tool that simplifies the cleaning of corpora used in machine learning, removing impurities introduced during the data collection process by Python-based web crawlers.
 
-La aplicación está construida utilizando React.js para la interfaz de usuario, permitiendo una interacción eficiente y amigable para los usuarios que necesitan limpiar datos de manera efectiva.
+The application is built using React.js for the user interface, offering an efficient and user-friendly experience for those who need to clean data effectively.
 
-## Tecnologías Utilizadas
+## Technologies Used
 - **Frontend:** React.js
-- **Backend:** Node.js (utilizando scripts de crawlers en Python para la recolección de datos)
+- **Backend:** Node.js (using Python-based crawler scripts for data collection)
 
-## Configuración del Proyecto
-### Requisitos Previos
-Asegúrate de tener instalado Node.js y npm en tu sistema para poder ejecutar el proyecto. Puedes descargarlos e instalarlos desde [Node.js official website](https://nodejs.org/).
+## Project Setup
 
-### Instalación
-Para iniciar el proyecto, necesitarás configurar tanto el frontend como el backend. Sigue estos pasos para cada uno:
+### Prerequisites
+Ensure you have Node.js and npm installed on your system to run the project. You can download and install them from the [Node.js official website](https://nodejs.org/).
+
+### Installation
+To set up the project, you’ll need to configure both the frontend and backend. Follow these steps for each:
 
 #### Frontend
-1. Navega a la carpeta `/client`:
+1. Navigate to the `/client` folder:
    ```bash
    cd client
    ```
-2. Instala las dependencias necesarias:
+2. Install the required dependencies:
    ```bash
    npm install
    ```
-3. Inicia la aplicación React:
+3. Start the React application:
    ```bash
    npm start
    ```
-   Esto compilará la aplicación y abrirá automáticamente una pestaña en tu navegador en `localhost:3000`.
+   This will compile the application and automatically open a browser tab at `localhost:3000`.
 
 #### Backend
-1. Navega a la carpeta base del backend `/crawler_CENID`:
+1. Navigate to the backend base folder `/crawler_CENID`:
    ```bash
    cd crawler_CENID
    ```
-2. Al igual que en el frontend, instala las dependencias necesarias:
+2. Install the required dependencies:
    ```bash
    npm install
    ```
-3. Inicia el servidor backend:
+3. Start the backend server:
    ```bash
    npm start
    ```
 
-Una vez que ambos servidores estén funcionando, la aplicación debería estar accesible a través de `localhost:3000`. Si no se abre automáticamente, puedes introducir esta dirección en tu navegador para acceder a la interfaz de usuario de la aplicación.
+Once both servers are running, the application should be accessible at `localhost:3000`. If it doesn’t open automatically, you can enter this address in your browser to access the application’s user interface.
 
-## Uso
-La interfaz de usuario de React te permitirá cargar los datos del corpus y aplicar diferentes herramientas y técnicas de limpieza para preparar los datos para su uso en modelos de aprendizaje automático. Sigue las instrucciones en pantalla para realizar las operaciones de limpieza necesarias.
+## Usage
+The React-based user interface allows you to load corpus data and apply various cleaning tools and techniques to prepare the data for use in machine learning models. Follow the on-screen instructions to perform the necessary cleaning operations.
